@@ -1,0 +1,149 @@
+body {
+  transition: background-color 0.5s;
+  
+  }
+  
+  .bg-change {
+  background-color: black;
+  color: white;
+  }
+  
+  .navbar-custom {
+  background-color: green;
+  transition: background-color 0.5s, opacity 0.5s;
+  }
+  
+  .navbar-custom.fade {
+  opacity: 0;
+  }
+  
+  .carousel-inner img {
+  width: 100%;
+  height: auto;
+  }
+  
+  .carousel-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  }
+  
+  .carousel-container .carousel {
+  width: 100%;
+  max-width: 500px;
+  }
+  
+  .text-container {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  text-align: center;
+  }
+  
+  .hidden-text {
+  display: none;
+  }
+  
+  .scroll-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
+  }
+  
+  .content-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+  border: 2px solid #4CAF50; 
+  padding: 10px; 
+  box-shadow: 0 0 10px rgba(79, 200, 164, 0); 
+  }
+  
+  .content-section
+  {
+  border-color: #76FF03; 
+  box-shadow: 0 0 50px rgba(79, 200, 164, 0.8);
+  }
+  
+  .content-section img {
+  width: 100%;
+  max-width: 400px;
+  }
+  
+  .content-section .text-content {
+  width: 100%;
+  max-width: 400px;
+  }
+  
+  .content-section.left {
+  transform: translateX(-100%);
+  }
+  
+  .content-section.right {
+  transform: translateX(100%);
+  }
+  
+  .content-section.visible {
+  opacity: 1;
+  transform: translateX(0);
+  }
+
+  
+  
+  .footer-custom {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+  }
+  
+  .scroll-top-btn {
+  position: absolute;
+  bottom: 70px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: bottom 0.3s;
+  z-index: 1000;
+  }
+  
+  .scroll-top-btn.show {
+  bottom: 70px;
+  }
+  
+
+ 
+  .hidden-monkey {
+  display: none; /* Oculta el "monito" inicialmente */
+  }
+  
+  .xbox-icon {
+  position: absolute;
+  left: 20px; 
+  top: 20px; 
+  }
+  
+  .container.content-section.left {
+  position: relative; /* Asegura que el contenido fluya correctamente */
+  }
+  
+  @media (max-width: 768px) {
+  .xbox-icon {
+  display: none;
+  }
+  }
